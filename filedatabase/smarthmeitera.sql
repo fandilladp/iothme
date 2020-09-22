@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 21, 2020 at 09:42 PM
+-- Generation Time: Sep 22, 2020 at 11:55 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -20,6 +20,41 @@ SET time_zone = "+00:00";
 --
 -- Database: `smarthmeitera`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `data_projek`
+--
+
+CREATE TABLE `data_projek` (
+  `id` int(11) NOT NULL,
+  `namaprojek` varchar(255) NOT NULL,
+  `token` varchar(255) NOT NULL,
+  `role` varchar(50) NOT NULL,
+  `category` text NOT NULL,
+  `deskripsi` varchar(255) NOT NULL,
+  `statusfield1` text DEFAULT NULL,
+  `statusfield2` text DEFAULT NULL,
+  `statusfield3` text DEFAULT NULL,
+  `gambar` varchar(255) NOT NULL,
+  `created_by` varchar(255) NOT NULL,
+  `created_date` datetime NOT NULL,
+  `updated_date` datetime NOT NULL,
+  `datafield_1` varchar(255) DEFAULT NULL,
+  `datafield_2` varchar(255) DEFAULT NULL,
+  `datafield_3` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `data_projek`
+--
+
+INSERT INTO `data_projek` (`id`, `namaprojek`, `token`, `role`, `category`, `deskripsi`, `statusfield1`, `statusfield2`, `statusfield3`, `gambar`, `created_by`, `created_date`, `updated_date`, `datafield_1`, `datafield_2`, `datafield_3`) VALUES
+(1, 'manual projek', 'jyhKehXtmvq93UBBbhOLP2YS4alspKE7is36qKcy1K8', 'manual', 'all', 'tester create data di manual projek', 'on', 'on', 'on', '1599752731_1113e1bce7aad7a7cf75.png', 'fandilladp', '2020-09-10 10:45:31', '2020-09-11 18:01:27', '80', '', ''),
+(5, 'test gauge', 'JxgM20Zv8re', 'gauge', 'monitoring', 'tester create data di gauge', 'on', 'on', 'on', '1599853896_fe4315ae50ec7b330418.png', 'fandilladp', '2020-09-11 14:51:36', '0000-00-00 00:00:00', '50', '20', '100'),
+(6, 'tester grafik', 'ABXXo8cUZSLeeDXqMxX0aoxZtufOJ6sF3dDbunzexN0', 'grafik', 'monitoring', 'tester create data di grafik', NULL, NULL, NULL, '1599863164_4f709d29ea38f0e1265b.png', 'fandilladp', '2020-09-11 17:26:04', '0000-00-00 00:00:00', '80', '30', '90'),
+(7, 'tester lampu', 'Dnv6RYS63EU5d1Ox6yqGnr0Wbw7ul3HgJqwtHr97Fs', 'lampu', 'control', 'tester create data di lampu', 'on', 'on', 'on', '1599863708_2745776a91c7b0f1af81.png', 'fandilladp', '2020-09-11 17:35:08', '0000-00-00 00:00:00', 'on', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -97,6 +132,12 @@ INSERT INTO `usertoken` (`id`, `email`, `token`, `created_date`) VALUES
 --
 
 --
+-- Indexes for table `data_projek`
+--
+ALTER TABLE `data_projek`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `kontrollampu`
 --
 ALTER TABLE `kontrollampu`
@@ -117,6 +158,12 @@ ALTER TABLE `usertoken`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `data_projek`
+--
+ALTER TABLE `data_projek`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `kontrollampu`

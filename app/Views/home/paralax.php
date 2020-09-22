@@ -14,7 +14,6 @@
      <link href="<?= base_url('assets') ?>/css/stylish-portfolio.css" rel="stylesheet">
      <!-- Custom Fonts -->
      <link href="<?= base_url('assets') ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-     <link href="<?= base_url('assets') ?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
      <link href="<?= base_url('assets') ?>/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
      <script src="<?= base_url('assets') ?>/home/js/jquery.js" type="text/javascript"></script>

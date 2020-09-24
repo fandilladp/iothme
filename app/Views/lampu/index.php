@@ -1,66 +1,78 @@
- <?= $this->extend('layout/templatelampu'); ?>
+<!DOCTYPE html>
+<html lang="en">
 
- <?= $this->section('isicontent'); ?>
+<head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
- <body>
+    <title>IoTHME</title>
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('/hme.png'); ?>" />
 
-     <div class="overlay"></div>
-
-     <div class="masthead">
-
-         <div class="masthead-bg"> <?= $this->include('layout/navbar'); ?></div>
-
-         <div class="container h-100">
-             <div class="row h-100">
-                 <div class="col-12 my-auto">
-                     <div class="masthead-content text-white py-5 py-md-0">
-                         <h1 class="mb-3">Light Control</h1>
-                         <p class="mb-5">start with a simple project controlling the lights remotely
-                             <strong>Open Documentasion exampel projek tutorial</strong></p>
-                         <div class="input-group input-group-newsletter">
-                             <a href="#">
-                                 <button class="btn btn-success" type="button" id="submit-button">Documentasion......
+<script src="<?= base_url('assets') ?>/vendor/jquery/jquery.min.js"></script>
+<link href="<?= base_url('assets') ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://oss.maxcdn.com/libs/normalize-css/3.0.0/normalize.min.css"/>
+        <link href="<?= base_url('assets') ?>/css/coming-soon.css" rel="stylesheet">
+        <style>
+body {
+  background: #222;
+}
+#carbonads a{color:#fff;text-decoration:none}#carbonads a:hover{color:#fff}
+        </style>
+    </head>
+    <body>
+    <div class="masthead-bg"> <?= $this->include('layout/navbar'); ?></div>
+        <div id="momoland">
+            <div class="wrapper">
+                        <h1>Control</h1>
+                        <div class="container">
+                            <h3>Buat Projek pengontrolan dengan mudah di sini, klik Dokumentasi untuk jika ada kesulitan dalam menggunakannya, klik creat new projek untuk membuat projek baru, dan klik About template untuk memberikan masukan , saran dab bugs yang anda alami agar dapat ditingkatkan lagi kedepannya</h3>
+                        </div>
+                       
+                        <div id="carbon-block"></div>
+                    <div>
+                    
+                             <a href="<?= base_url('dokumentasi/index/lampu'); ?>">
+                                 <button class="btn btn-outline-warning btn-lg" type="button" id="submit-button">Documentasion......
                                  </button>
                              </a>
-                         </div>
-                         <div class="input-group input-group-newsletter mt-2 mx-auto">
+                        
                              <a href="<?= base_url('lampu/created'); ?>">
-                                 <button class="btn btn-danger btn-lg" type="button" id="submit-button">Create New Projek
+                                 <button class="btn btn-outline-primary btn-lg" type="button" id="submit-button">Create New Projek
                                  </button>
                              </a>
-                         </div>
-                         <div class="input-group input-group-newsletter mt-2 mx-auto">
-                             <a href="<?= base_url('aboutTemplate/index'); ?>">
-                                 <button class="btn btn-info btn-lg" type="button" id="submit-button">About Template.....
+                         
+                             <a href="<?= base_url('aboutTemplate/index/lampu'); ?>">
+                                 <button class="btn btn-outline-info btn-lg" type="button" id="submit-button">About Template...
                                  </button>
                              </a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
-     </div>
+                    </div>
+            </div>
+        </div>
 
-     <div class="social-icons">
-         <ul class="list-unstyled text-center mb-0">
-             <li class="list-unstyled-item">
-                 <a href="#">
-                     <i class="fab fa-twitter"></i>
-                 </a>
-             </li>
-             <li class="list-unstyled-item">
-                 <a href="#">
-                     <i class="fab fa-facebook-f"></i>
-                 </a>
-             </li>
-             <li class="list-unstyled-item">
-                 <a href="#">
-                     <i class="fab fa-instagram"></i>
-                 </a>
-             </li>
-         </ul>
-     </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-     <?= $this->endSection(); ?>
+        <script src="<?= base_url('assets') ?>/js/daisy.js" defer></script>
+        <script src="<?= base_url('assets') ?>/js/coming-soon.js" defer></script>
+        <script>
+        try {
+        fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+            return true;
+        }).catch(function(e) {
+            var carbonScript = document.createElement("script");
+            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+            carbonScript.id = "_carbonads_js";
+            document.getElementById("carbon-block").appendChild(carbonScript);
+        });
+        } catch (error) {
+        console.log(error);
+        }
+        </script>
+        <script src="<?= base_url('assets') ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

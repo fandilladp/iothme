@@ -86,7 +86,7 @@
     $session = session();
     $errors = $session->getFlashdata('errors');
     ?>
- <?= $this->include('layout/navbar'); ?>
+<?= $this->include('layout/navbarcreate'); ?>
  <div class="container-fluid">
      <div class="row no-gutter">
          <div class="container col-md-4 col-lg-6 bg-light">

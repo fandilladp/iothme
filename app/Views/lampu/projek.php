@@ -25,6 +25,7 @@
     <link href="<?= base_url('assets') ?>/css/coming-soon.min.css" rel="stylesheet">
 
     <!-- Call to Action -->
+    <?= $this->include('layout/navbarcreate'); ?>
     <div class="container">
         <section class="py-5">
             <div class="container">

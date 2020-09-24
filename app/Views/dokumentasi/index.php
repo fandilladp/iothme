@@ -18,14 +18,14 @@
     <link href="<?= base_url('assets') ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url('assets') ?>/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="<?= base_url('assets') ?>/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
+    <script src="<?= base_url('assets') ?>/home/js/jquery.js" type="text/javascript"></script>
     <!-- Custom CSS -->
     <link href="<?= base_url('assets') ?>/css/dokumentasi.css" rel="stylesheet">
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ml-10" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?= base_url('assets') ?>/img/logohme.png" alt="" /></span>
         </a>
         <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -38,16 +38,16 @@
                 </div>
             </div>
         </form>
-
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Get Started</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Kontrol Lampu</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Monitoring Sensor</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Library Arduino</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#control">Control</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#monitoring">Monitoring</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">All</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Build Apps</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Contoh Projek</a></li>
             </ul>
         </div>
     </nav>
@@ -58,180 +58,124 @@
         <section class="resume-section" id="about">
             <div class="resume-section-content">
                 <h1 class="mb-0">
-                    Clarence
-                    <span class="text-primary">Taylor</span>
+                    ITERA
+                    <span class="text-primary">IoTHME</span>
                 </h1>
                 <div class="subheading mb-5">
-                    3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                    <a href="mailto:name@email.com">name@email.com</a>
+                    <a>Alat Untuk mempermudah Anda membuat Projek IoT</a>
                 </div>
-                <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                <p class="lead mb-5">Kami hadir untuk mempermudah anda dalam pengembangan dan pembelajaran alat berbasis IoT, anda tidak perlu menghabiskan waktu dalam pembuatan server dan aplikasi untuk komunikasi projek anda, anda hanya perlu sedikit waktu untuk membuat sebuah aplikasi dan bisa memfokuskan ke hal pengembangan dibidang yang lainya.</p>
                 <div class="social-icons">
                     <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
                     <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-icon" href="http://instagram.com/hme_itera"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>
         <hr class="m-0" />
         <!-- Experience-->
-        <section class="resume-section" id="experience">
+        <section class="resume-section" id="control">
             <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
+                <h2 class="mb-5">Control</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Senior Web Developer</h3>
-                        <div class="subheading mb-3">Intelitec Solutions</div>
-                        <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                        <hr>
+                        <h3 class="mb-0">Pendahuluan</h3>
+                        <div class="subheading mb-3">kategory Control</div>
+                        <p>kategory ini memungkinkan kamu membuat projek pengontrolan, dengan UI yang sudah disediakan maupun melalui link API Write</p>
+                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
+                        <p>Kamu bisa melakukan manipulasi atau update data yang ada didatabase secara instan, dan bisa kamu manfaatkannya untuk mengedalikan sesuatu sesuai sesuai parameter yang dibuat.</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
                 </div>
+                <hr>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Web Developer</h3>
-                        <div class="subheading mb-3">Intelitec Solutions</div>
-                        <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                        <h3 class="mb-0">API Read</h3>
+                        <div class="subheading mb-3">Apa itu API Read ?</div>
+                        <p>Setiap template yang memiliki kategory control pasti memiliki API read, lalu apa itu API read dan bagai mana cara menggunakannya ?</p>
+                        <p>Api read merupakan link yang terhubung ke database dari projek kamu dalam bentuk json, kamu bisa memanfaatkannya sesuai kebutuhan, link ini hanya bisa membaca data yang ada di database, dan tidak bisa melalukan perubahan atau update ke dalam data base</p>
+                        <div class="subheading mb-3">Bagaimana Cara menggunakanya ?</div>
+                        <p>Kamu hanya perlu memanggil link tersebut melalui perangkat lunak yang terkoneksi keinternet, lalu lakukanlah reload link agar didapatkan update data sesuai rentan waktu yang kamu inginkan, lalu gunakan data yang kamu dapat dari link tersebut sesuai kebutuhan.</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory control</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Junior Web Designer</h3>
-                        <div class="subheading mb-3">Shout! Media Productions</div>
-                        <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Web Design Intern</h3>
-                        <div class="subheading mb-3">Shout! Media Productions</div>
-                        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                </div>
-            </div>
         </section>
         <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
+        <!-- monitoring-->
+        <section class="resume-section" id="monitoring">
             <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
+                <h2 class="mb-5">Monitoring</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">University of Colorado Boulder</h3>
-                        <div class="subheading mb-3">Bachelor of Science</div>
-                        <div>Computer Science - Web Development Track</div>
-                        <p>GPA: 3.23</p>
+                        <hr>
+                        <h3 class="mb-0">Pendahuluan</h3>
+                        <div class="subheading mb-3">kategory Monitoring</div>
+                        <p>kategory ini memungkinkan kamu membuat projek monitoring, dengan UI/UX yang sudah disediakan maupun melalui link API Read</p>
+                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
+                        <p>Kamu bisa membaca atau melihat data projek kamu kapan saja secara instan dengan bantuan tempalate yang mempermudah kamu dalam melihat data projek kamu dengan tampilan yang bisa kamu pilih sesuai keinginan.</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">James Buchanan High School</h3>
-                        <div class="subheading mb-3">Technology Magnet Program</div>
-                        <p>GPA: 3.56</p>
+                        <h3 class="mb-0">API Write</h3>
+                        <div class="subheading mb-3">Apa itu API Read ?</div>
+                        <p>Setiap template yang memiliki kategory monitoring pasti memiliki API write, lalu apa itu API read dan bagai mana cara menggunakannya ?</p>
+                        <p>Api write merupakan URI yang memungkinkan kamu dapat memanipulasi data yang ada didalam database secara instan. </p>
+                        <div class="subheading mb-3">Bagaimana Cara menggunakanya ?</div>
+                        <p>Kamu hanya menambahkan parameter field diakhir API write tersebut</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory control</span></div>
                 </div>
-            </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
+        <!-- ALL-->
         <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-3">Programming Languages & Tools</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                </ul>
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Mobile-First, Responsive Design
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Browser Testing & Debugging
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Agile Development & Scrum
-                    </li>
-                </ul>
-            </div>
+        <div class="resume-section-content">
+                <h2 class="mb-5">All</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <hr>
+                        <h3 class="mb-0">Pendahuluan</h3>
+                        <div class="subheading mb-3">kategory All</div>
+                        <p>kategory adalah kategory yang menggabungkan fitur dari semua kategory yang ada.</p>
+                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
+                        <p>Kamu bisa mengupdate atau melihat data projek kamu kapan saja secara instan dengan bantuan tempalate yang mempermudah kamu dalam melihat data projek kamu dengan tampilan yang bisa kamu pilih sesuai keinginan.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Memiliki dua link API</h3>
+                        <div class="subheading mb-3">Bisa melakukan control dan monitoring</div>
+                        <p>memiliki fitur control dan monitoring.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory all</span></div>
+                </div>
         </section>
         <hr class="m-0" />
         <!-- Interests-->
         <section class="resume-section" id="interests">
             <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                <h2 class="mb-5">Build Apps</h2>
+                <div class="subheading mb-3">Public View</div>
+                <p>Kamu bisa menjadikan projekmu menjadi sebuah aplikasi menggukan tools dari pihak ketiga, kamu hanya perlu menggunakan web view untuk merender projek kamu, tersedia Public View yang bisa kamu gunakan untuk aplikasi mu yang ingin berdiri sendiri tanpa adanya authentikasi login.</p>
+                <hr>
+                <div class="subheading mb-3">menu advance</div>
+                <p>Memungkinkan kamu untuk membuat projek yang lebih profesional, kamu bisa membuat menu halaman awal dan lainya lalu menggabungkan dengan projek kamu, kamu bisa langsung mengnjadikan projek ini menjadi aplikasi android dengan cara mengkonvert URI Public View yang sudah disediakan, atau kamu bisa menggunakan tools webview untuk membuild secara gratis.</p>
+                <hr>
+                <div class="subheading mb-3">Build App</div>
+                <h5>COMING SOON......</h5>
+                <p>Nantikan fitur ini semoga ceoat terealisasikan. fitur ini dapat membuil projek kamu menjadi apllikasi atau biasa disebut PWA, tanpa memerlukan pihak luar untuk membuildnya.</p>
             </div>
         </section>
         <hr class="m-0" />
         <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2
-                        <sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
+                <h2 class="mb-5">Contoh Projek IoT</h2>
+                <a href="#" class="btn-lg btn-primary">Contoh Projek</a>
             </div>
         </section>
     </div>

@@ -27,8 +27,7 @@
     <link href="<?= base_url('assets') ?>/css/jquery.simple-bar-graph.min.css" rel="stylesheet">
 </head>
 
-<?= $this->include('layout/navbar'); ?>
-
+<?= $this->include('layout/navbarcreate'); ?>
 <body>
     <!-- Call to Action -->
     <div class="container">

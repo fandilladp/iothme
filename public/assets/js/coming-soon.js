@@ -1,6 +1,22 @@
-(function($) {
-  "use strict"; // Start of use strict
+/**
+ * DaisyJS Demo Script
+ * by Waren Gonzaga
+ */
 
-  // No JS
+// in vanilla javascript
 
-})(jQuery); // End of use strict
+document.addEventListener('DOMContentLoaded', function () {
+  daisyjs(document.getElementById('momoland'), {
+    dotColor: '#fff',
+    lineColor: '#ddd'
+  });
+}, false);
+
+// as jquery plugin
+
+/* $(document).ready(function() {
+  $('#momoland').daisyjs({
+    dotColor: '#000',
+    lineColor: '#222'
+  });
+}); */

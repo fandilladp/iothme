@@ -27,8 +27,7 @@
 
 
  </head>
-
- <?= $this->include('layout/navbar'); ?>
+ <?= $this->include('layout/navbarcreate'); ?>
  <?php
 
     $namaprojek = [

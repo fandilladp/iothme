@@ -108,7 +108,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 p-10">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
+                        <a class="portfolio-box" href="<?= base_url('dokumentasi') ;?>">
                             <img class="img-fluid" src="<?= base_url('assets') ?>/img/dokumentasi.jpg" alt="">
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Example</div>

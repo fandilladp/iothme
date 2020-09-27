@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+ <html lang="en">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="">
+     <meta name="author" content="">
+
+     <title>IoTHME</title>
+     <link rel="shortcut icon" type="image/png" href="<?= base_url('/favicon.ico'); ?>" />
+
+     <!-- Bootstrap Core CSS -->
+     <link href="<?= base_url('assets') ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="<?= base_url('assets') ;?>/advance/example/index.css" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css" />
+  <link href="<?= base_url('assets') ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
@@ -94,52 +104,27 @@
   <div class="main">
     <h2>Tampilan UI/UX</h2>
     <div>
-      <button onclick="anno.removeAll('1')">Remove Id 1</button>
+      <!-- <button onclick="anno.removeAll('1')">Remove Id 1</button>
       <button onclick="anno.removeAll()">Remove all annotations</button>
       <button onclick="anno.hideAnnotations()">Hide annotations</button>
-      <button onclick="anno.showAnnotations()">Show annotations</button>
+      <button onclick="anno.showAnnotations()">Show annotations</button> -->
 
       <div style="margin-top: 50px;" id="showPixel">[x: 0 - y: 0]</div>
-      <img id="imageExample" src="<?= base_url('assets') ;?>/advance/example/784px-Dalmatiner_schw_braun.jpg" width="505">
-      <p class="image-caption">
-        Die verschiedenen Farben eines Dalmatiners Public Domain. Source:
-        <a href="https://commons.wikimedia.org/wiki/File:Dalmatiner_schw_braun.jpg">Wikimedia
-          Commons</a>
-      </p>
-    </div>
-            <div class="smartphone ">
-                 <div class="content photocromik ">
-                     <div class="container">
-                         <section class="py-5">
-                             <div class="container">
-                                 <div class="container text-cenphotocromik ter mb-5">
-                                     <h2 class="mb-4 text-center" id="viewNamaProjek"></h2>
-                                 </div>
-                                 <div class="row pricing" id="mycoba">
-                                 </div>
-                         </section>
-                     </div>
-                 </div>
-             </div>
-
-    <div style="margin-top: 100px;">
-      <img class="annotableImage" src="<?= base_url('assets') ;?>/advance/example/800px-Cat_and_Dog_Game.jpg">
-      <p class="image-caption">
-        Cat about to play with the dog and his guarded balls. Public Domain. Source:
-        <a href="https://commons.wikimedia.org/wiki/File:Cat_and_Dog_Game.jpg">Wikimedia
-          Commons</a>
-      </p>
-    </div>
-
-    <div style="margin-top: 100px;">
-      <img class="annotableImage" src="<?= base_url('assets') ;?>/advance/example/712px-June_odd-eyed-cat_cropped.jpg">
-      <p class="image-caption">
-        A white cat with a one yellow eye and one blue eye. Public Domain. Source:
-        <a href="https://commons.wikimedia.org/wiki/File:June_odd-eyed-cat_cropped.jpg">Wikimedia
-          Commons</a>
-      </p>
+      <div class="smartphone">
+        <div class="content" id="imageExample">
+        </div>
+      </div>
     </div>
   </div>
+
+
+  <!-- navigasi kanan -->
+  <div class="sidekanannav">
+    <h3>Component setting</h3>
+  </div>
+
+
+
 </body>
 
 </html>

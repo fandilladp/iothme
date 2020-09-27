@@ -29,21 +29,20 @@
 
 
  <?php
+   $namaprojek = [
+    'name' => 'namaprojek',
+    'id' => 'namaprojek',
+    'value' => $projek->namaprojek,
+    'class' => 'form-control',
+];
 
-    $namaprojek = [
-        'name' => 'namaprojek',
-        'id' => 'namaprojek',
-        'value' => null,
-        'class' => 'form-control',
-    ];
-
-    $deskripsi = [
-        'name' => 'deskripsi',
-        'id' => 'deskripsi',
-        'type' => 'textarea',
-        'value' => null,
-        'class' => 'form-control',
-    ];
+$deskripsi = [
+    'name' => 'deskripsi',
+    'id' => 'deskripsi',
+    'type' => 'textarea',
+    'value' => $projek->deskripsi,
+    'class' => 'form-control',
+];
 
     $gambar = [
         'name' => 'gambar',
@@ -102,7 +101,7 @@
                                      </p>
                                  </div>
                              <?php endif ?>
-                             <?= form_open_multipart('grafikMonitoring/update'); ?>
+                             <?= form_open_multipart('grafik/update/'. $projek->id); ?>
                              <div class="form-group">
                                  <?= form_label("Nama Project", "namaprojek") ?>
                                  <div class="input-group-append">
@@ -113,6 +112,7 @@
                                  <?= form_label("Deskripsi", "deskripsi") ?>
                                  <?= form_input($deskripsi) ?>
                              </div>
+                             <img class="img-fluid" alt="image" src="<?= base_url('uploads/' . $projek->gambar) ?>" />
                              <div class="form-group">
                                  <?= form_label("Thumbnail", "gambar") ?>
                                  <?= form_upload($gambar) ?>

@@ -44,7 +44,7 @@ class Manual extends BaseController
             if ($this->request->getPost()) {
                 //jika ada data yang di post
                 $data = $this->request->getPost();
-                $this->validation->run($data, 'manual');
+                $this->validation->run($data, 'lampu');
                 $errors = $this->validation->getErrors();
 
                 if (!$errors) {
@@ -71,9 +71,7 @@ class Manual extends BaseController
 
                     $id = $dataprojekmodel->insertID();
 
-                    $segment = ['manual', 'projek', $id];
-                    // // /barang/view/$id
-                    return redirect()->to(site_url($segment));
+                    return redirect()->to(site_url('user/index'));
                 } else {
                     $this->session->setFlashdata('errors', $errors);
                 }
@@ -86,8 +84,8 @@ class Manual extends BaseController
     public function update()
     {
         $statusfield1 = $this->request->getPost('statusfield1');
-        $statusfield2 = $this->request->getPost('statusfield1');
-        $statusfield3 = $this->request->getPost('statusfield1');
+        $statusfield2 = $this->request->getPost('statusfield2');
+        $statusfield3 = $this->request->getPost('statusfield3');
         if (!$statusfield1) {
             $statusfield1 = 'off';
         }

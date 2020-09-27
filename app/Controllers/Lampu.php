@@ -96,8 +96,8 @@ class Lampu extends BaseController
     public function update()
     {
         $statusfield1 = $this->request->getPost('statusfield1');
-        $statusfield2 = $this->request->getPost('statusfield1');
-        $statusfield3 = $this->request->getPost('statusfield1');
+        $statusfield2 = $this->request->getPost('statusfield2');
+        $statusfield3 = $this->request->getPost('statusfield3');
         if (!$statusfield1) {
             $statusfield1 = 'off';
         }

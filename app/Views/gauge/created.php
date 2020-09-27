@@ -45,23 +45,23 @@
         'class' => 'form-control',
     ];
 
-    $sensor1 = [
-        'name' => 'sensor1',
-        'id' => 'sensor1',
+    $statusfield1 = [
+        'name' => 'statusfield1',
+        'id' => 'statusfield1',
         'class' => 'custom-control-input form-control',
         'type' => 'checkbox',
     ];
 
-    $sensor2 = [
-        'name' => 'sensor2',
-        'id' => 'sensor2',
+    $statusfield2 = [
+        'name' => 'statusfield2',
+        'id' => 'statusfield2',
         'class' => 'custom-control-input form-control',
         'type' => 'checkbox',
     ];
 
-    $sensor3 = [
-        'name' => 'sensor3',
-        'id' => 'sensor3',
+    $statusfield3 = [
+        'name' => 'statusfield3',
+        'id' => 'statusfield3',
         'class' => 'custom-control-input form-control',
         'type' => 'checkbox',
     ];
@@ -138,20 +138,20 @@
                              </div>
                              <div class="form-group">
                                  <div class="custom-control custom-switch">
-                                     <?= form_input($sensor1) ?>
-                                     <label class="custom-control-label" for="sensor1">Sensor 1</label>
+                                     <?= form_input($statusfield1) ?>
+                                     <label class="custom-control-label" for="statusfield1">Sensor 1</label>
                                  </div>
                              </div>
                              <div class="form-group">
                                  <div class="custom-control custom-switch">
-                                     <?= form_input($sensor2) ?>
-                                     <label class="custom-control-label" for="sensor2">Sensor 2</label>
+                                     <?= form_input($statusfield2) ?>
+                                     <label class="custom-control-label" for="statusfield2">Sensor 2</label>
                                  </div>
                              </div>
                              <div class="form-group">
                                  <div class="custom-control custom-switch">
-                                     <?= form_input($sensor3) ?>
-                                     <label class="custom-control-label" for="sensor3">Sensor 3</label>
+                                     <?= form_input($statusfield3) ?>
+                                     <label class="custom-control-label" for="statusfield3">Sensor 3</label>
                                  </div>
                              </div>
                              <div class="text-right">
@@ -184,10 +184,10 @@
 
 
 
-         $("#sensor1").on('click', function() {
-             let value = $("#sensor1").val();
+         $("#statusfield1").on('click', function() {
+             let value = $("#statusfield1").val();
              if (value !== 'on') {
-                 $("#sensor1").attr('value', 'on');
+                 $("#statusfield1").attr('value', 'on');
                  $("#mycoba").append('<div id="remove1" class="col-lg-12 mb-5"><div class="card mb-5 mb-lg-0"><div class="card-body"><div id="gauge" class="200x160px"></div></div></div></div>');
                  var gauge = new JustGage({
                      id: "gauge", // the id of the html element
@@ -202,19 +202,19 @@
                      gauge.refresh(Math.random() * 100);
                  }, 2000)
              } else {
-                 let value = $("#sensor1").val();
+                 let value = $("#statusfield1").val();
                  if (value == 'on') {
                      $("#remove1").remove();
-                     $("#sensor1").attr('value', 'off');
+                     $("#statusfield1").attr('value', 'off');
                  }
              }
          });
 
 
-         $("#sensor2").on('click', function() {
-             let value = $("#sensor2").val();
+         $("#statusfield2").on('click', function() {
+             let value = $("#statusfield2").val();
              if (value !== 'on') {
-                 $("#sensor2").attr('value', 'on');
+                 $("#statusfield2").attr('value', 'on');
                  $("#mycoba").append('<div id="remove2" class="col-lg-12 mb-5"><div class="card mb-5 mb-lg-0"><div class="card-body"><div id="gauge2" class="200x160px"></div></div></div></div>');
                  var gauge2 = new JustGage({
                      id: "gauge2", // the id of the html element
@@ -229,26 +229,26 @@
                      gauge2.refresh(Math.random() * 100);
                  }, 1000)
              } else {
-                 let value = $("#sensor2").val();
+                 let value = $("#statusfield2").val();
                  if (value == 'on') {
                      $("#remove2").remove();
-                     $("#sensor2").attr('value', 'off');
+                     $("#statusfield2").attr('value', 'off');
                  }
              }
 
          });
 
 
-         $("#sensor3").on('click', function() {
-             let value = $("#sensor3").val();
+         $("#statusfield3").on('click', function() {
+             let value = $("#statusfield3").val();
              if (value == 'on') {
                  console.log('ok');
              }
          });
-         $("#sensor3").on('click', function() {
-             let value = $("#sensor3").val();
+         $("#statusfield3").on('click', function() {
+             let value = $("#statusfield3").val();
              if (value !== 'on') {
-                 $("#sensor3").attr('value', 'on');
+                 $("#statusfield3").attr('value', 'on');
                  $("#mycoba").append('<div id="remove3" class="col-lg-12 mb-5"><div class="card mb-5 mb-lg-0"><div class="card-body"><div id="gauge3" class="200x160px"></div></div></div></div>');
                  var gauge3 = new JustGage({
                      id: "gauge3", // the id of the html element
@@ -263,10 +263,10 @@
                      gauge3.refresh(Math.random() * 100);
                  }, 1500)
              } else {
-                 let value = $("#sensor3").val();
+                 let value = $("#statusfield3").val();
                  if (value == 'on') {
                      $("#remove3").remove();
-                     $("#sensor3").attr('value', 'off');
+                     $("#statusfield3").attr('value', 'off');
                  }
              }
 

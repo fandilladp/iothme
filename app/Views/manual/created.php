@@ -45,25 +45,25 @@
         'class' => 'form-control',
     ];
 
-    $sensor1 = [
-        'name'  => 'sensor1',
-        'id'    => 'sensor1',
+    $statusfield1 = [
+        'name'  => 'statusfield1',
+        'id'    => 'statusfield1',
         'class' => 'custom-control-input form-control',
         'type'  => 'checkbox',
         'value' => 'on'
     ];
 
-    $sensor2 = [
-        'name'  => 'sensor2',
-        'id'    => 'sensor2',
+    $statusfield2 = [
+        'name'  => 'statusfield2',
+        'id'    => 'statusfield2',
         'class' => 'custom-control-input form-control',
         'type'  => 'checkbox',
         'value' => 'on'
     ];
 
-    $sensor3 = [
-        'name'  => 'sensor3',
-        'id'    => 'sensor3',
+    $statusfield3 = [
+        'name'  => 'statusfield3',
+        'id'    => 'statusfield3',
         'class' => 'custom-control-input form-control',
         'type'  => 'checkbox',
         'value' => 'on'
@@ -125,20 +125,20 @@
                              </div>
                              <div class="form-group">
                                  <div class="custom-control custom-switch">
-                                     <?= form_input($sensor1) ?>
-                                     <label class="custom-control-label" for="sensor1">Field 1</label>
+                                     <?= form_input($statusfield1) ?>
+                                     <label class="custom-control-label" for="statusfield1">Field 1</label>
                                  </div>
                              </div>
                              <div class="form-group">
                                  <div class="custom-control custom-switch">
-                                     <?= form_input($sensor2) ?>
-                                     <label class="custom-control-label" for="sensor2">Field 2</label>
+                                     <?= form_input($statusfield2) ?>
+                                     <label class="custom-control-label" for="statusfield2">Field 2</label>
                                  </div>
                              </div>
                              <div class="form-group">
                                  <div class="custom-control custom-switch">
-                                     <?= form_input($sensor3) ?>
-                                     <label class="custom-control-label" for="sensor3">Field 3</label>
+                                     <?= form_input($statusfield3) ?>
+                                     <label class="custom-control-label" for="statusfield3">Field 3</label>
                                  </div>
                              </div>
                              <div class="text-right">

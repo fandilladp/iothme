@@ -64,9 +64,8 @@
                 <div class="subheading mb-5">
                     <a>Alat Untuk mempermudah Anda membuat Projek IoT</a>
                 </div>
-                <p class="lead mb-5">Kami hadir untuk mempermudah anda dalam pengembangan dan pembelajaran alat berbasis IoT, anda tidak perlu menghabiskan waktu dalam pembuatan server dan aplikasi untuk komunikasi projek anda, anda hanya perlu sedikit waktu untuk membuat sebuah aplikasi dan bisa memfokuskan ke hal pengembangan dibidang yang lainya.</p>
+                <p  align=”justify” class="lead mb-5">ITERAIOTHME adalah sebuat platfrom IoT yang dibuat untuk memenuhi kebutuhan dari pengembangan alat berbasis IoT diindonesia. ITERAIOTHME dibuat dengan latar belakang masalah yang dialami mahasiswa karena kesulitan dalam membuat server dan aplikasi mobile untuk monitoring maupun pengontrolan berbasis internet, karena itu kami hadir dan menyediakan platfrom IoT yang dapat membundel masalah tersebut dengan membuat banyak template projek dengan interface yang dapat siseuaikan sesuai kebutuhan, lalu kami juga menawarkan menu advance untuk penyesuaian interface yang lebih fleksibel, lalu kami menyediakan link public view untuk projek yang dibuat agar bisa dibuild menjadi aplikasi mobile bisa melalui convert ataupun menggunakan class webView, harapan kami kedepannya platfrom ini dapat membuild projek user menjadi app mandiri sesuai kehendak user.</p>
                 <div class="social-icons">
-                    <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
                     <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="social-icon" href="http://instagram.com/hme_itera"><i class="fab fa-instagram"></i></a>
@@ -163,11 +162,11 @@
                 <p>Kamu bisa menjadikan projekmu menjadi sebuah aplikasi menggukan tools dari pihak ketiga, kamu hanya perlu menggunakan web view untuk merender projek kamu, tersedia Public View yang bisa kamu gunakan untuk aplikasi mu yang ingin berdiri sendiri tanpa adanya authentikasi login.</p>
                 <hr>
                 <div class="subheading mb-3">menu advance</div>
-                <p>Memungkinkan kamu untuk membuat projek yang lebih profesional, kamu bisa membuat menu halaman awal dan lainya lalu menggabungkan dengan projek kamu, kamu bisa langsung mengnjadikan projek ini menjadi aplikasi android dengan cara mengkonvert URI Public View yang sudah disediakan, atau kamu bisa menggunakan tools webview untuk membuild secara gratis.</p>
+                <p>Memungkinkan kamu untuk membuat projek yang lebih professional dan flexibel, kamu bisa membuat membuat interface projek kamu sesuai keinginan, kamu haya perlu mendrag komponen yang disediakan dan meletekannya ditempat yang kamu inginkan, kamu juga dapat mengatur warna, ukuran dan lainya.</p>
                 <hr>
                 <div class="subheading mb-3">Build App</div>
                 <h5>COMING SOON......</h5>
-                <p>Nantikan fitur ini semoga ceoat terealisasikan. fitur ini dapat membuil projek kamu menjadi apllikasi atau biasa disebut PWA, tanpa memerlukan pihak luar untuk membuildnya.</p>
+                <p>Nantikan fitur ini semoga ceoat terealisasikan. fitur ini dapat membuild projek kamu menjadi apllikasi mobile, tanpa memerlukan pihak luar untuk membuildnya.</p>
             </div>
         </section>
         <hr class="m-0" />
@@ -175,7 +174,7 @@
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
                 <h2 class="mb-5">Contoh Projek IoT</h2>
-                <a href="#" class="btn-lg btn-primary">Contoh Projek</a>
+                <a href="" class="btn-lg btn-primary">Contoh Projek</a>
             </div>
         </section>
     </div>

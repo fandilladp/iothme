@@ -117,11 +117,11 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 p-10">
-                        <a class="portfolio-box" href="#">
+                        <a class="portfolio-box" href="<?= site_url('advance') ;?>">
                         <img class="img-fluid" src="<?= base_url('assets') ?>/img/andvance.jpg" alt="">
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">All</div>
-                                <div class="project-name">Pro</div>
+                                <div class="project-name">Advance</div>
                             </div>
                         </a>
                     </div>

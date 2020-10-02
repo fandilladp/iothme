@@ -92,9 +92,8 @@
     </div>
 
     <h3>Komponen Control</h3>
-    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/Dalmatiner.jpg" annotation-text="Dog" style="height:100px" />
-    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/BluEye.jpg" annotation-text="Blue eye" style="height:100px" />
-    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/YellowEye.jpg" annotation-text="Yellow eye" style="height:100px" />
+    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/gaugeanotation.jpg" annotation-text="gauge" style="height:auto" />
+   
   </div>
 
 
@@ -111,10 +110,9 @@
 
       <div style="margin-top: 50px;" id="showPixel">[x: 0 - y: 0]</div>
       <div class="smartphone">
-        <div class="content" id="imageExample">
-        </div>
+      <img id="imageExample" src="<?= base_url('assets') ;?>/advance/example/bgview.png" width="505">
       </div>
-    </div>
+   </div>
   </div>
 
 

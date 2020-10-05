@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Code Box Copy</title>
+
+        <!-- Cod Box Copy begin -->
+        <link href="prism/prism.min.css" rel="stylesheet">
+        <link href="code-box-copy/css/code-box-copy.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="prism/prism.min.js"></script>
+        <script src="clipboard/clipboard.min.js"></script>
+        <script src="code-box-copy/js/code-box-copy.js"></script>
+        <!-- Cod Box Copy end -->
+        
+        <style>
+            body { margin: 0; padding: 0; background-color: #fff; font-family: sans-serif; color: #333; font-size: 100%; line-height: 1.5; }
+            .container { width: 960px; max-width: 100%; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+            h1 { margin: 0; padding: 1em 0; font-size: 32px; font-weight: normal; text-align: center; color: #fff; }
+            h2 { margin: 2em 0 1.5em 0; padding: 0 0 0.15em 0; font-size: 26px; font-weight: bold; border-bottom: 3px solid #eee; }
+            h3 { margin: 2em 0 0.5em 0; padding: 0; font-size: 20px; font-weight: bold; }
+            p { margin: 2em 0 1em 0; padding: 0; }
+            h3 + p { margin-top: 0.5em; }
+            ul { margin: 0 0 0 1.25em; padding: 0; line-height: 1.875; }
+            a { text-decoration: none; color: #07a; padding: 5px 6px; background-color: #f5f5f5; -webkit-transition: background-color 0.2s linear; transition: background-color 0.2s linear; }
+            a:hover { text-decoration: none; background-color: #07a; color: #fff; }
+            .header { background-color: #257; -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.05); box-shadow: 0 0 50px rgba(0, 0, 0, 0.05); }
+            .main { padding-top: 3em; padding-bottom: 6em; }
+            .footer { padding: 2em 1em 1.25em 1em; background-color: #f5f5f5; border-top: 1px solid #eee; text-align: center; }
+        </style>
+    </head>
+    <body>
+                <div class="code-box-copy">
+                    <button class="code-box-copy__btn" data-clipboard-target="#example-head" title="Copy"></button>
+                    <pre><code class="language-html" id="example-head">
+#include 
+
+                        #define ACCESSKEY "your-access-key"
+                        #define WIFISSID "your-wifi-ssid"
+                        #define PASSWORD "your-wifi-password"
+                        
+                        #define projectName "your-project-name"
+                        #define deviceName "your-device-name"
+                        
+                        AntaresESP8266HTTP antares(ACCESSKEY);
+                        
+                        void setup() {
+                          Serial.begin(115200);
+                          antares.setDebug(true);
+                          antares.wifiConnection(WIFISSID,PASSWORD);
+                        }
+                        
+                        void loop() {
+                          int temp = random(25,30);
+                          int hum = random(75,90);
+                        
+                          antares.add("temperature", temp);
+                          antares.add("humidity", hum);
+                        
+                          antares.send(projectName, deviceName);
+                          delay(10000);
+                        }
+                </code></pre>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('.code-box-copy').codeBoxCopy({
+                tooltipText: 'Copied',
+                tooltipShowTime: 1000,
+                tooltipFadeInTime: 300,
+                tooltipFadeOutTime: 300
+            });
+        </script>
+    </body>
+</html>

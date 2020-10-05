@@ -124,7 +124,7 @@ if ($(window).width() > MQL) {
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link" href="#">About</a>
+                     <a class="nav-link" href="#">Forum</a>
                  </li>
                  <li class="nav-item">
                      <a class="nav-link" href="<?= base_url('dokumentasi/index') ?>">Documentasion</a>

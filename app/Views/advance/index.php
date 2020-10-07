@@ -25,8 +25,8 @@
   <script>
     var anno;
 
-    $(document).ready(function () {
-
+    $(document).ready(function (event, annotation) {
+  
       anno = $("#imageExample").annotable({
         draggable: ".annotation"
       });
@@ -41,10 +41,12 @@
 
       anno.on('onAnnotationCreated', function (event, annotation) {
         console.log(annotation);
+        $('#isi').html("<div>"+annotation.id+ "</div><div>"+annotation.text+ "</div><div>"+annotation.width+ "</div><div>"+annotation.height+ "</div><div>"+annotation.position.center.x+ "</div>");
       });
 
       anno.on('onAnnotationUpdated', function (event, annotation) {
         console.log(annotation);
+        $('#isi').html("<div>"+annotation.id+ "</div><div>"+annotation.text+ "</div><div>"+annotation.width+ "</div><div>"+annotation.height+ "</div><div>"+annotation.position.center.x+ "</div>");
       });
 
       anno.on('onAnnotationRemoved', function (event, annotation) {
@@ -52,14 +54,9 @@
       });
 
       var myAnnotation = {
-        id: 3,
-        text: "customAnnotation",
-        position: {
-          center: { x: 593, y: 353 }
-        },
-        width: 250,
-        height: 400
-      };
+        <div class="annotation" annotation-text="layout" annotation-width="160" annotation-height="250" annotation-id="2">2 -
+
+      }
       anno.addAnnotation(myAnnotation);
 
       var annos = $(".annotableImage").annotable({ //return array of annotable
@@ -84,16 +81,17 @@
   <div class="sidenav">
     <h3>Pilih Komponen</h3>
     <h5><i class="fas fa-feather-alt"></i> Drag and Drop Komponen</h5>
-    <div class="annotation" annotation-text="A Dog" annotation-width="500" annotation-height="150" annotation-id="1">1 -
+    <div class="annotation" annotation-text="layout" annotation-width="80" annotation-height="125" annotation-id="1">1 -
       Layout Horizontal
     </div>
-    <div class="annotation" annotation-text="Cat" annotation-width="150" annotation-height="500" annotation-id="2">2 -
+    <div class="annotation" annotation-text="layout" annotation-width="160" annotation-height="250" annotation-id="2">2 -
       Layout Vertikal
     </div>
 
     <h3>Komponen Control</h3>
-    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/gaugeanotation.jpg" annotation-text="gauge" style="height:auto" />
-   
+    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/gaugeanotation.jpg" annotation-text="gauge" annotation-width="250" annotation-height="150" style="height:auto" annotation-id="3"/>
+    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/gaugeanotation.jpg" annotation-text="gauge2" style="height:auto" />
+    <img class="annotation" src="<?= base_url('assets') ;?>/advance/example/imageAnnotations/gaugeanotation.jpg" annotation-text="gauge3" style="height:auto" />
   </div>
 
 
@@ -103,15 +101,9 @@
   <div class="main">
     <h2>Tampilan UI/UX</h2>
     <div>
-      <!-- <button onclick="anno.removeAll('1')">Remove Id 1</button>
-      <button onclick="anno.removeAll()">Remove all annotations</button>
-      <button onclick="anno.hideAnnotations()">Hide annotations</button>
-      <button onclick="anno.showAnnotations()">Show annotations</button> -->
-
       <div style="margin-top: 50px;" id="showPixel">[x: 0 - y: 0]</div>
       <div class="smartphone">
-      <img id="imageExample" src="<?= base_url('assets') ;?>/advance/example/bgview.png" width="505">
-      </div>
+      <img id="imageExample" src="<?= base_url('assets') ;?>/advance/example/bgview.png" height="505px" width="320px"/>
    </div>
   </div>
 
@@ -119,6 +111,16 @@
   <!-- navigasi kanan -->
   <div class="sidekanannav">
     <h3>Component setting</h3>
+    <hr>
+    <div id="isi"></div>
+    <div id="control">
+    
+    </div>
+    <button onclick="anno.hideAnnotations()">Hide annotations</button>
+    <button onclick="anno.showAnnotations()">Show annotations</button>
+   
+      
+    <button id="submit" class="btn btn-success">Create</button>
   </div>
 
 

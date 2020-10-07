@@ -18,6 +18,10 @@ class Advance extends BaseController
         }
         return redirect()->to(site_url('auth/login'));
     }
+    public function test()
+    {
+        return view('advance/test');
+    }
     //--------------------------------------------------------------------
     public function projek()
     {

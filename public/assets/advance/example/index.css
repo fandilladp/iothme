@@ -80,8 +80,8 @@ img {
 
 .smartphone {
     position: relative;
-    width: 360px;
-    height: 640px;
+    width: 320px;
+    height: 505px;
     margin: auto;
     border: 16px black solid;
     border-top-width: 60px;
@@ -119,7 +119,7 @@ img {
   
   /* The screen (or content) of the device */
   .smartphone .content {
-    width: 360px;
-    height: 640px;
+    width: 320px;
+    height: 505px;
     background: white;
   }

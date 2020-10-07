@@ -51,11 +51,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Get Started</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Quick start</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#control">Control</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#monitoring">Monitoring</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">All</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Build Apps</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Quick start</a></li>
             </ul>
         </div>
     </nav>
@@ -80,108 +80,12 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="control">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Control</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <hr>
-                        <h3 class="mb-0">Pendahuluan</h3>
-                        <div class="subheading mb-3">kategory Control</div>
-                        <p>kategory ini memungkinkan kamu membuat projek pengontrolan, dengan UI yang sudah disediakan maupun melalui link API Write</p>
-                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
-                        <p>Kamu bisa melakukan manipulasi atau update data yang ada didatabase secara instan, dan bisa kamu manfaatkannya untuk mengedalikan sesuatu sesuai sesuai parameter yang dibuat.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">API Read</h3>
-                        <div class="subheading mb-3">Apa itu API Read ?</div>
-                        <p>Setiap template yang memiliki kategory control pasti memiliki API read, lalu apa itu API read dan bagai mana cara menggunakannya ?</p>
-                        <p>Api read merupakan link yang terhubung ke database dari projek kamu dalam bentuk json, kamu bisa memanfaatkannya sesuai kebutuhan, link ini hanya bisa membaca data yang ada di database, dan tidak bisa melalukan perubahan atau update ke dalam data base</p>
-                        <div class="subheading mb-3">Bagaimana Cara menggunakanya ?</div>
-                        <p>Kamu hanya perlu memanggil link tersebut melalui perangkat lunak yang terkoneksi keinternet, lalu lakukanlah reload link agar didapatkan update data sesuai rentan waktu yang kamu inginkan, lalu gunakan data yang kamu dapat dari link tersebut sesuai kebutuhan.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory control</span></div>
-                </div>
-        </section>
-        <hr class="m-0" />
-        <!-- monitoring-->
-        <section class="resume-section" id="monitoring">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Monitoring</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <hr>
-                        <h3 class="mb-0">Pendahuluan</h3>
-                        <div class="subheading mb-3">kategory Monitoring</div>
-                        <p>kategory ini memungkinkan kamu membuat projek monitoring, dengan UI/UX yang sudah disediakan maupun melalui link API Read</p>
-                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
-                        <p>Kamu bisa membaca atau melihat data projek kamu kapan saja secara instan dengan bantuan tempalate yang mempermudah kamu dalam melihat data projek kamu dengan tampilan yang bisa kamu pilih sesuai keinginan.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">API Write</h3>
-                        <div class="subheading mb-3">Apa itu API Read ?</div>
-                        <p>Setiap template yang memiliki kategory monitoring pasti memiliki API write, lalu apa itu API read dan bagai mana cara menggunakannya ?</p>
-                        <p>Api write merupakan URI yang memungkinkan kamu dapat memanipulasi data yang ada didalam database secara instan. </p>
-                        <div class="subheading mb-3">Bagaimana Cara menggunakanya ?</div>
-                        <p>Kamu hanya menambahkan parameter field diakhir API write tersebut</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory control</span></div>
-                </div>
-        </section>
-        <hr class="m-0" />
-        <!-- ALL-->
-        <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-                <h2 class="mb-5">All</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <hr>
-                        <h3 class="mb-0">Pendahuluan</h3>
-                        <div class="subheading mb-3">kategory All</div>
-                        <p>kategory adalah kategory yang menggabungkan fitur dari semua kategory yang ada.</p>
-                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
-                        <p>Kamu bisa mengupdate atau melihat data projek kamu kapan saja secara instan dengan bantuan tempalate yang mempermudah kamu dalam melihat data projek kamu dengan tampilan yang bisa kamu pilih sesuai keinginan.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Memiliki dua link API</h3>
-                        <div class="subheading mb-3">Bisa melakukan control dan monitoring</div>
-                        <p>memiliki fitur control dan monitoring.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory all</span></div>
-                </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Build Apps</h2>
-                <div class="subheading mb-3">Public View</div>
-                <p>Kamu bisa menjadikan projekmu menjadi sebuah aplikasi menggukan tools dari pihak ketiga, kamu hanya perlu menggunakan web view untuk merender projek kamu, tersedia Public View yang bisa kamu gunakan untuk aplikasi mu yang ingin berdiri sendiri tanpa adanya authentikasi login.</p>
-                <hr>
-                <div class="subheading mb-3">menu advance</div>
-                <p>Memungkinkan kamu untuk membuat projek yang lebih professional dan flexibel, kamu bisa membuat membuat interface projek kamu sesuai keinginan, kamu haya perlu mendrag komponen yang disediakan dan meletekannya ditempat yang kamu inginkan, kamu juga dapat mengatur warna, ukuran dan lainya.</p>
-                <hr>
-                <div class="subheading mb-3">Build App</div>
-                <h5>COMING SOON......</h5>
-                <p>Nantikan fitur ini semoga ceoat terealisasikan. fitur ini dapat membuild projek kamu menjadi apllikasi mobile, tanpa memerlukan pihak luar untuk membuildnya.</p>
-            </div>
-        </section>
         <hr class="m-0" />
         <!-- Awards-->
         <section class="resume-section" id="awards">
             <div class="resume-section-content">
-                <h2 class="mb-5">Contoh Projek IoT</h2>
-                <div class="subheading mb-3">Quickstart</div>
+                <h2 class="mb-5">Quick Start</h2>
+                
                 <p>Di bawah ini adalah beberapa contoh kode yang dapat anda gunakan untuk mengirim data dari proyek yang telah anda buat ke ITERAIOTHME.</p>
                 <ul>
                     <li>
@@ -416,6 +320,102 @@ void loop() {
                 </div>
                     <br>
                 <a href="" class="btn-lg btn-primary">Contoh Projek</a>
+            </div>
+        </section>
+        <!-- Experience-->
+        <section class="resume-section" id="control">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Control</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <hr>
+                        <h3 class="mb-0">Pendahuluan</h3>
+                        <div class="subheading mb-3">kategory Control</div>
+                        <p>kategory ini memungkinkan kamu membuat projek pengontrolan, dengan UI yang sudah disediakan maupun melalui link API Write</p>
+                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
+                        <p>Kamu bisa melakukan manipulasi atau update data yang ada didatabase secara instan, dan bisa kamu manfaatkannya untuk mengedalikan sesuatu sesuai sesuai parameter yang dibuat.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">API Read</h3>
+                        <div class="subheading mb-3">Apa itu API Read ?</div>
+                        <p>Setiap template yang memiliki kategory control pasti memiliki API read, lalu apa itu API read dan bagai mana cara menggunakannya ?</p>
+                        <p>Api read merupakan link yang terhubung ke database dari projek kamu dalam bentuk json, kamu bisa memanfaatkannya sesuai kebutuhan, link ini hanya bisa membaca data yang ada di database, dan tidak bisa melalukan perubahan atau update ke dalam data base</p>
+                        <div class="subheading mb-3">Bagaimana Cara menggunakanya ?</div>
+                        <p>Kamu hanya perlu memanggil link tersebut melalui perangkat lunak yang terkoneksi keinternet, lalu lakukanlah reload link agar didapatkan update data sesuai rentan waktu yang kamu inginkan, lalu gunakan data yang kamu dapat dari link tersebut sesuai kebutuhan.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory control</span></div>
+                </div>
+        </section>
+        <hr class="m-0" />
+        <!-- monitoring-->
+        <section class="resume-section" id="monitoring">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Monitoring</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <hr>
+                        <h3 class="mb-0">Pendahuluan</h3>
+                        <div class="subheading mb-3">kategory Monitoring</div>
+                        <p>kategory ini memungkinkan kamu membuat projek monitoring, dengan UI/UX yang sudah disediakan maupun melalui link API Read</p>
+                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
+                        <p>Kamu bisa membaca atau melihat data projek kamu kapan saja secara instan dengan bantuan tempalate yang mempermudah kamu dalam melihat data projek kamu dengan tampilan yang bisa kamu pilih sesuai keinginan.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">API Write</h3>
+                        <div class="subheading mb-3">Apa itu API Read ?</div>
+                        <p>Setiap template yang memiliki kategory monitoring pasti memiliki API write, lalu apa itu API read dan bagai mana cara menggunakannya ?</p>
+                        <p>Api write merupakan URI yang memungkinkan kamu dapat memanipulasi data yang ada didalam database secara instan. </p>
+                        <div class="subheading mb-3">Bagaimana Cara menggunakanya ?</div>
+                        <p>Kamu hanya menambahkan parameter field diakhir API write tersebut</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory control</span></div>
+                </div>
+        </section>
+        <hr class="m-0" />
+        <!-- ALL-->
+        <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+                <h2 class="mb-5">All</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <hr>
+                        <h3 class="mb-0">Pendahuluan</h3>
+                        <div class="subheading mb-3">kategory All</div>
+                        <p>kategory adalah kategory yang menggabungkan fitur dari semua kategory yang ada.</p>
+                        <div class="subheading mb-3">Apa saja yang bisa dilakukan ?</div>
+                        <p>Kamu bisa mengupdate atau melihat data projek kamu kapan saja secara instan dengan bantuan tempalate yang mempermudah kamu dalam melihat data projek kamu dengan tampilan yang bisa kamu pilih sesuai keinginan.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Memiliki dua link API</h3>
+                        <div class="subheading mb-3">Bisa melakukan control dan monitoring</div>
+                        <p>memiliki fitur control dan monitoring.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Fitur didalam kategory all</span></div>
+                </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Build Apps</h2>
+                <div class="subheading mb-3">Public View</div>
+                <p>Kamu bisa menjadikan projekmu menjadi sebuah aplikasi menggukan tools dari pihak ketiga, kamu hanya perlu menggunakan web view untuk merender projek kamu, tersedia Public View yang bisa kamu gunakan untuk aplikasi mu yang ingin berdiri sendiri tanpa adanya authentikasi login.</p>
+                <hr>
+                <div class="subheading mb-3">menu advance</div>
+                <p>Memungkinkan kamu untuk membuat projek yang lebih professional dan flexibel, kamu bisa membuat membuat interface projek kamu sesuai keinginan, kamu haya perlu mendrag komponen yang disediakan dan meletekannya ditempat yang kamu inginkan, kamu juga dapat mengatur warna, ukuran dan lainya.</p>
+                <hr>
+                <div class="subheading mb-3">Build App</div>
+                <h5>COMING SOON......</h5>
+                <p>Nantikan fitur ini semoga ceoat terealisasikan. fitur ini dapat membuild projek kamu menjadi apllikasi mobile, tanpa memerlukan pihak luar untuk membuildnya.</p>
             </div>
         </section>
     </div>
